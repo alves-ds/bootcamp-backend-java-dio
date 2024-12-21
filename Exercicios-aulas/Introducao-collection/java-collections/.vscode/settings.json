@@ -1,0 +1,15 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+
+    "workbench.colorCustomizations": {
+    "debugConsole.background": "#000000",   // Cor de fundo preta
+    "debugConsole.infoForeground": "#FFFFFF",
+    "terminal.foreground": "#FFFFFF",   // Texto branco
+    "terminal.background": "#000000"     // Cor do texto branca
+}
+
+}

@@ -6,13 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CarrinhoDeCompras",
+            "request": "launch",
+            "mainClass": "list.OperacoesBasicas.CarrinhoDeCompras",
+            "projectName": "java-collections_8fced953",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
             "name": "ListaTarefa",
             "request": "launch",
             "mainClass": "list.OperacoesBasicas.ListaTarefa",
             "projectName": "java-collections_8fced953",
             "console": "internalConsole"
         },
-        
         {
             "type": "java",
             "name": "Current File",

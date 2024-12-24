@@ -8,6 +8,7 @@ public class CarrinhoDeCompras {
     // Criar a lista carrinho de compras
     private List<Item> carrinhoCompras;
 
+    
     // Metodo construtor, iniciando um arraylist vazio
     public CarrinhoDeCompras(){
         this.carrinhoCompras = new ArrayList<>();
@@ -30,5 +31,22 @@ public class CarrinhoDeCompras {
     }
 
     // Criar metodo para calcular o valor total do carrinho, multiplicando o preco pela quantidade
+    public void calcularValorTotalCarrinho(){
+        float valorItem = 0;
+        for(Item i: carrinhoCompras){
+            valorItem = valorItem + (i.getPreco() * i.getQuantidade());
+        }
+        System.out.println("O valor total dos itens no carrinho eh: " + valorItem);
+    }
+
+    public static void main(String[] args) {
+        CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+        carrinho.adicionarItem("Bola", 10, 2);
+        carrinho.adicionarItem("Sapato", 300, 4);
+        carrinho.calcularValorTotalCarrinho();
+
+        
+    }
+    
 
 }

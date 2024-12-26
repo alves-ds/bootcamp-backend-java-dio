@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CatalogoLivros",
+            "request": "launch",
+            "mainClass": "list.Pesquisa.CatalogoLivros",
+            "projectName": "java-collections_8fced953",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
             "name": "CarrinhoDeCompras",
             "request": "launch",
             "mainClass": "list.OperacoesBasicas.CarrinhoDeCompras",

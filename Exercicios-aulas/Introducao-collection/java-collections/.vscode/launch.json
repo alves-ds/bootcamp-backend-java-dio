@@ -6,6 +6,22 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OrdenacaoPessoas",
+            "request": "launch",
+            "mainClass": "list.Ordenacao.OrdenacaoPessoas",
+            "projectName": "java-collections_8fced953",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
+            "name": "SomaNumeros",
+            "request": "launch",
+            "mainClass": "list.Pesquisa.SomaNumeros",
+            "projectName": "java-collections_8fced953",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
             "name": "CatalogoLivros",
             "request": "launch",
             "mainClass": "list.Pesquisa.CatalogoLivros",

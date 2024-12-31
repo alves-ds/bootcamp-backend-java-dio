@@ -41,6 +41,7 @@ public class EstoqueProdutos {
         if(!estoqueProdutos.isEmpty()){
             for(ProdutoMap p: estoqueProdutos.values()){
                 if(p.getPreco() > maiorPreco){
+                    maiorPreco = p.getPreco();
                     objetoMaisCaro = p;
                 }
             }
@@ -56,6 +57,7 @@ public class EstoqueProdutos {
             for(ProdutoMap p: estoqueProdutos.values()){
                 if(p.getPreco() < menorPreco){
                     objetoMaisBarato = p;
+                    menorPreco = p.getPreco();
                 }
             }
         }
@@ -70,6 +72,7 @@ public class EstoqueProdutos {
             for(ProdutoMap p: estoqueProdutos.values()){
                 if((p.getPreco()*p.getQuantidade()) > menorQtdEValor){
                     produtoMaiorQuantidadeEValor = p;
+                    menorQtdEValor = p.getPreco()*p.getQuantidade();
                 }
             }
         }
@@ -79,11 +82,11 @@ public class EstoqueProdutos {
     // Testar a classe
     public static void main(String[] args) {
         EstoqueProdutos estoqueProdutos = new EstoqueProdutos();
-        estoqueProdutos.adicionarProduto(10, "Detergente", 10, 2);
-        estoqueProdutos.adicionarProduto(11, "Amaciante", 12, 11);
-        estoqueProdutos.adicionarProduto(12, "Sabonete", 14, 5);
-        estoqueProdutos.adicionarProduto(13, "Shampoo", 10, 10);
-        estoqueProdutos.adicionarProduto(14, "Creme dental", 10, 12);
+        estoqueProdutos.adicionarProduto(10, "Detergente", 10, 2.0);
+        estoqueProdutos.adicionarProduto(11, "Amaciante", 12, 11.0);
+        estoqueProdutos.adicionarProduto(12, "Sabonete", 14, 5.0);
+        estoqueProdutos.adicionarProduto(13, "Shampoo", 10, 10.0);
+        estoqueProdutos.adicionarProduto(14, "Creme dental", 10, 12.0);
         estoqueProdutos.exibirProdutos();
         System.out.println(estoqueProdutos.calcularValorTotalEstoque());
         System.out.println(estoqueProdutos.obterProdutoMaisBarato());

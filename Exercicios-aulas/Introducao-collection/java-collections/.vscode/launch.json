@@ -6,10 +6,26 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EstoqueProdutos",
+            "request": "launch",
+            "mainClass": "Map.Pesquisa.EstoqueProdutos",
+            "projectName": "java-collections_8fced953",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
+            "name": "AgendaContatos",
+            "request": "launch",
+            "mainClass": "Map.OperacoesBasicas.AgendaContatos",
+            "projectName": "java-collections_8fced953",
+            "console": "internalConsole"
+        },
+        {
+            "type": "java",
             "name": "CadastroProdutos",
             "request": "launch",
             "mainClass": "Set.Ordenacao.CadastroProdutos",
-            "projectName": "java-collections_8fced953", 
+            "projectName": "java-collections_8fced953",
             "console": "internalConsole"
         },
         {

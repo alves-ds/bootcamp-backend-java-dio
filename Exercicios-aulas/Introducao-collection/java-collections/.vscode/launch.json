@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AgendaEventos",
+            "request": "launch",
+            "mainClass": "Map.Ordenacao.AgendaEventos",
+            "projectName": "java-collections_8fced953"
+        },
+        {
+            "type": "java",
             "name": "EstoqueProdutos",
             "request": "launch",
             "mainClass": "Map.Pesquisa.EstoqueProdutos",

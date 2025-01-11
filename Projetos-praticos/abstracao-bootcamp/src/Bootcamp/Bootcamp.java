@@ -68,5 +68,21 @@ public class Bootcamp {
         System.out.println(conteudos);
     }
 
+    // Metodo get para conteudos
+    public Set<Conteudo> getConteudos() {
+        return conteudos;
+    }
+
+    // Metodo get para devs inscritos
+    public Set<Dev> getDevsInscritos() {
+        return devsInscritos;
+    }
+
+    // Metodo get para o nome do bootcamp
+    public String getNome() {
+        return nome;
+    }
+
+    
     
 }
